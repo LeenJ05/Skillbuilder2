@@ -4,35 +4,68 @@
  * a game.  The purpose of a power pill is to simply
  * provide a character with power.
  *
- * @author (You)
+ * @author (Leen Jean)
  * @version (0.1)
  */
 public class PowerPill
 {
-    // TODO - replace this line with instruction from step 1
+    public static final int DEFAULT_POWER = 10;
 
     // instance variables
-    // TODO - replace this line with instruction from step 2
-    // TODO - replace this line with instruction from step 3
+    private int power;
+    private String name;
 
     // constructors
+    /**
+     \* Initializes this power pill to a default power value
+     \* and sets the name of the pill to name.
+     \* @param name the name of this power pill.
+     */
+    public PowerPill(String name ){
+        this.power = DEFAULT_POWER;
+        this.name = name;
+    }
 
-    // TODO - replace this line with instruction from step 4
+    /**
+     * Initializes this power pill to the value of power
+     * and sets the name of the pill to name.
+     * @param name the name of this power pill
+     * @param power the power level of this power pill.
+     */
 
-    // TODO - replace this line with instruction from step 5
+    public PowerPill(String name, int power ){
+        this.power = power;
+        this.name = name;
+    }
 
 
     // accessor methods
 
-    // TODO - replace this line with instruction from step 6
+    public int getPower(){
+        return power;
+}
 
 
     // mutator methods
 
-    // TODO - replace this line with instruction from step 7
+    public void setPower(){
+        this.power = power;
 
-    // toString method
+    }
 
-    // TODO - replace this line with instruction from step 8
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String toString(){
+        return("PowerPill" + name + "=" + power );
+    }
+
+
+
 
 }
