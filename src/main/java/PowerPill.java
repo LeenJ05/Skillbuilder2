@@ -62,7 +62,7 @@ public class PowerPill
     }
 
     public String toString(){
-        return("PowerPill" + name + " = " + power );
+        return("PowerPill " + name + " = " + power );
     }
 
 
