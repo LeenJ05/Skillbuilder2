@@ -48,7 +48,7 @@ public class PowerPill
 
     // mutator methods
 
-    public void setPower(int expected){
+    public void setPower(int power){
         this.power = power;
 
     }
@@ -62,7 +62,7 @@ public class PowerPill
     }
 
     public String toString(){
-        return("PowerPill" + name + "=" + power );
+        return("PowerPill" + name + " = " + power );
     }
 
 
