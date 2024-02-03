@@ -48,7 +48,7 @@ public class PowerPill
 
     // mutator methods
 
-    public void setPower(){
+    public void setPower(int expected){
         this.power = power;
 
     }
